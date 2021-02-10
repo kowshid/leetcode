@@ -12,9 +12,9 @@ class Solution:
         while iterator < n:
             # in case the char is already available
             if self.flagForCharsUsed[ord(s[iterator])]:
-                iterator = self.lastInstance[ord(s[iterator])] + 1
                 if self.length < currentLength:
                     self.length = currentLength
+                iterator = self.lastInstance[ord(s[iterator])] + 1
                 currentLength = 0
                 self.flagForCharsUsed = [False] * 256
                 self.lastInstance = [None] * 256
