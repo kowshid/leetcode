@@ -30,6 +30,7 @@ class Solution:
         prev = head
         temp = head.next
 
+        # i starts from zero, not 1, think accordingly
         for i in range(length - k - 1):
             prev = temp
             temp = temp.next
