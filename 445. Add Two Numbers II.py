@@ -1,8 +1,8 @@
 # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
@@ -16,7 +16,7 @@ class Solution:
         while temp1:
             num1 = num1 * 10 + temp1.val
             temp1 = temp1.next
-            print(num1)
+            # print(num1)
 
         while temp2:
             num2 = num2 * 10 + temp2.val
@@ -32,9 +32,9 @@ class Solution:
                 result //= 10
 
         m = len(listNum)
-        print(listNum)
+        # print(listNum)
         listNum.reverse()
-        print(listNum)
+        # print(listNum)
 
         head = None
         prev = None
