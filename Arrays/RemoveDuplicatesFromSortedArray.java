@@ -1,6 +1,7 @@
+// Problem number 26
 // https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
-class RemoveDuplicatesFromSortedArray_26 {
+class RemoveDuplicatesFromSortedArray {
     public int removeDuplicates(int[] nums) {
         if (nums == null || nums.length == 0) return 0;
         int k = 1;
