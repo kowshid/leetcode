@@ -1,8 +1,6 @@
 // Problem: 1
 // https://leetcode.com/problems/two-sum/
 
-package Arrays;
-
 import java.util.HashMap;
 
 public class TwoSum {

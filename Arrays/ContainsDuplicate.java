@@ -1,8 +1,6 @@
 // Problem: 217
 // https://leetcode.com/problems/contains-duplicate/
 
-package Arrays;
-
 import java.util.HashMap;
 
 public class ContainsDuplicate {

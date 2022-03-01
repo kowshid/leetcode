@@ -1,8 +1,6 @@
 // Problem: 66
 // https://leetcode.com/problems/plus-one/
 
-package Arrays;
-
 public class PlusOne {
     public int[] plusOne(int[] digits) {
         int index = digits.length - 1;
