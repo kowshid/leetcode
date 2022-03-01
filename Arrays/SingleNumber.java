@@ -1,10 +1,7 @@
 // Problem: 136
 // https://leetcode.com/problems/single-number/
 
-package Arrays;
-
 import java.util.HashSet;
-import java.util.Set;
 
 public class SingleNumber {
     public int singleNumber(int[] nums) {
@@ -19,7 +16,7 @@ public class SingleNumber {
 
     public int singleNumberBad(int[] nums) {
         if(nums.length <= 1) return nums[0];
-        Set<Integer> trackingSet = new HashSet<>();
+        HashSet<Integer> trackingSet = new HashSet<>();
 
         for(int i = 0; i < nums.length; i++) {
             if (!trackingSet.contains(nums[i])) {
