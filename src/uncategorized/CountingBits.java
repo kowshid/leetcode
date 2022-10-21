@@ -1,6 +1,8 @@
 // Problem: 338
 // https://leetcode.com/problems/counting-bits/
 
+package uncategorized;
+
 class CountingBits {
     public int[] countBits(int n) {
         if (n == 0) {

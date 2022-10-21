@@ -1,6 +1,8 @@
 // Problem: 136
 // https://leetcode.com/problems/single-number/
 
+package arrays;
+
 import java.util.HashSet;
 
 public class SingleNumber {
