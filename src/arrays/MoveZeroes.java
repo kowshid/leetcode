@@ -1,6 +1,8 @@
 // Problem: 283
 // https://leetcode.com/problems/move-zeroes/
 
+package arrays;
+
 public class MoveZeroes {
     public void moveZeroes(int[] nums) {
         if (nums.length <= 1) return;

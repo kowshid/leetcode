@@ -1,6 +1,8 @@
 // Problem: 122
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 
+package arrays;
+
 public class BestTimeToBuyAndSellStockII {
     public int maxProfit(int[] prices) {
         if (prices == null || prices.length < 2) return 0;

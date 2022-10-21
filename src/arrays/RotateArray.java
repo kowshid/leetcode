@@ -1,6 +1,8 @@
 // Problem: 189
 // https://leetcode.com/problems/rotate-array/
 
+package arrays;
+
 class RotateArray {
     public void rotate(int[] nums, int k) {
         if (nums.length <= 1) return;
