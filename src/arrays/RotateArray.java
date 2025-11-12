@@ -4,7 +4,9 @@
 package arrays;
 
 class RotateArray {
+
     public void rotate(int[] nums, int k) {
+
         if (nums.length <= 1) return;
         k = k % nums.length;
         if (k <= 0) return;
@@ -14,6 +16,7 @@ class RotateArray {
     }
 
     public static void reverseArray(int[] nums, int start, int end) {
+
         if (start >= end || nums.length <= 1) return;
 
         int temp = nums[start];

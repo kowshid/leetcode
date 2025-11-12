@@ -1,7 +1,7 @@
-// Problem:191
+// Problem: 191
 // https://leetcode.com/problems/number-of-1-bits/
 
-package others;
+package bits;
 
 public class NumberOf1Bits {
     public int hammingWeight(int n) {

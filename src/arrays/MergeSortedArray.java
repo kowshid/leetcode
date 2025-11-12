@@ -1,10 +1,10 @@
-// Problem#88
+// Problem: 88
 // https://leetcode.com/problems/merge-sorted-array/
 
 package arrays;
 
 public class MergeSortedArray {
-    public static void merge(int[] nums1, int m, int[] nums2, int n) {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
         if (n == 0) {
             return;
         }

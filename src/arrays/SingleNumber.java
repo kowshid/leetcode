@@ -7,7 +7,7 @@ import java.util.HashSet;
 
 public class SingleNumber {
     public int singleNumber(int[] nums) {
-        if(nums.length <= 1) return nums[0];
+        if (nums.length <= 1) return nums[0];
         int solution = 0;
         for (int num : nums) {
             solution = solution ^ num;
@@ -17,14 +17,13 @@ public class SingleNumber {
     }
 
     public int singleNumberBad(int[] nums) {
-        if(nums.length <= 1) return nums[0];
+        if (nums.length <= 1) return nums[0];
         HashSet<Integer> trackingSet = new HashSet<>();
 
-        for(int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             if (!trackingSet.contains(nums[i])) {
                 trackingSet.add(nums[i]);
-            }
-            else {
+            } else {
                 trackingSet.remove(nums[i]);
             }
         }

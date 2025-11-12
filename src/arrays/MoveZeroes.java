@@ -38,10 +38,9 @@ public class MoveZeroes {
         int zeroPos = -1;
 
         for (int i = 0; i < nums.length; i++) {
-            if(nums[i] == 0 && zeroPos < 0) {
+            if (nums[i] == 0 && zeroPos < 0) {
                 zeroPos = i;
-            }
-            else if(nums[i] != 0 && zeroPos >= 0) {
+            } else if (nums[i] != 0 && zeroPos >= 0) {
                 int temp = nums[i];
                 nums[i] = 0;
                 nums[zeroPos] = temp;

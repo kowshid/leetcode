@@ -12,7 +12,7 @@ public class PlusOne {
             return digits;
         }
 
-        while(index >= 0) {
+        while (index >= 0) {
             if (digits[index] != 9) {
                 digits[index]++;
                 break;
@@ -21,7 +21,7 @@ public class PlusOne {
             index--;
         }
 
-        if(digits[0] == 0 && index == -1) {
+        if (digits[0] == 0 && index == -1) {
             digits = new int[digits.length + 1];
             digits[0] = 1;
         }

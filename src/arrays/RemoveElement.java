@@ -1,11 +1,11 @@
-// Problem#27
+// Problem: 27
 // https://leetcode.com/problems/remove-element/
 
 package arrays;
 
 public class RemoveElement {
 
-    public static int removeElementCopyNonValues(int[] nums, int val) {
+    public int removeElementCopyNonValues(int[] nums, int val) {
         if (nums.length == 0) {
             return 0;
         }
@@ -21,7 +21,7 @@ public class RemoveElement {
         return count;
     }
 
-    public static int removeElement(int[] nums, int val) {
+    public int removeElement(int[] nums, int val) {
         if (nums.length == 0) {
             return 0;
         }

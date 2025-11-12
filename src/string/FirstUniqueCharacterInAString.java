@@ -1,9 +1,12 @@
+// Problem: 387
+// https://leetcode.com/problems/first-unique-character-in-a-string/
+
 package string;
 
 import java.util.HashSet;
 
 public class FirstUniqueCharacterInAString {
-    public int firstUniqChar(String s) {
+    public int firstUniqueChar(String s) {
         if (s.length() == 1) return 0;
         HashSet<Character> occurredChar = new HashSet<>();
         for (int i = 0; i < s.length() - 1; i++) {

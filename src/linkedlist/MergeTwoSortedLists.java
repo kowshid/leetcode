@@ -1,6 +1,5 @@
 // Problem: 21
 // https://leetcode.com/problems/merge-two-sorted-lists/
-// https://leetcode.com/problems/merge-two-sorted-lists/submissions/827485102/
 
 package linkedlist;
 
@@ -16,8 +15,7 @@ public class MergeTwoSortedLists {
             if (list1.val < list2.val) {
                 curr.next = list1;
                 list1 = list1.next;
-            }
-            else {
+            } else {
                 curr.next = list2;
                 list2 = list2.next;
             }
@@ -26,8 +24,7 @@ public class MergeTwoSortedLists {
 
         if (list1 != null) {
             curr.next = list1;
-        }
-        else {
+        } else {
             curr.next = list2;
         }
 
@@ -41,8 +38,7 @@ public class MergeTwoSortedLists {
         if (list1.val < list2.val) {
             list1.next = mergeTwoListsRecursive(list1.next, list2);
             return list1;
-        }
-        else {
+        } else {
             list2.next = mergeTwoListsRecursive(list1, list2.next);
             return list2;
         }

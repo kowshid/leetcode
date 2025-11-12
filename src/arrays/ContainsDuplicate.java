@@ -11,7 +11,7 @@ public class ContainsDuplicate {
         if (nums.length <= 1) return false;
         HashMap<Integer, Boolean> mapToTrackNumbers = new HashMap<>();
 
-        for (int num: nums) {
+        for (int num : nums) {
             if (mapToTrackNumbers.get(num) != null) {
                 return true;
             }
@@ -25,7 +25,7 @@ public class ContainsDuplicate {
         if (nums.length <= 1) return false;
         HashSet<Integer> numberSet = new HashSet<>();
 
-        for (int num: nums) {
+        for (int num : nums) {
             if (numberSet.contains(num)) {
                 return true;
             }

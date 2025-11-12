@@ -1,6 +1,5 @@
 // Problem: 7
 // https://leetcode.com/problems/reverse-integer
-// https://leetcode.com/problems/reverse-integer/submissions/827537813/
 
 package string;
 
@@ -12,8 +11,7 @@ public class ReverseInteger {
             int ret = Integer.parseInt(stringBuilder.toString());
             if (x < 0) ret *= -1;
             return ret;
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             return 0;
         }
     }

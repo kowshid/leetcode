@@ -1,6 +1,5 @@
 // Problem: 237
 // https://leetcode.com/problems/delete-node-in-a-linked-list/
-// https://leetcode.com/problems/delete-node-in-a-linked-list/submissions/827349516/
 
 package linkedlist;
 

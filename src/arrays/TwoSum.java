@@ -13,7 +13,7 @@ public class TwoSum {
         HashMap<Integer, Integer> indexMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             if (indexMap.get(target - nums[i]) != null) {
-                return new int[] {indexMap.get(target - nums[i]), i};
+                return new int[]{indexMap.get(target - nums[i]), i};
             }
             indexMap.put(nums[i], i);
         }
@@ -29,15 +29,14 @@ public class TwoSum {
         for (int i = 0; i < nums.length; i++) {
             if (indexMap.get(nums[i]) == null) {
                 indexMap.put(nums[i], i);
-            }
-            else if (nums[indexMap.get(nums[i])] + nums[i] == target) {
-                return new int[] {indexMap.get(nums[i]), i};
+            } else if (nums[indexMap.get(nums[i])] + nums[i] == target) {
+                return new int[]{indexMap.get(nums[i]), i};
             }
         }
 
         for (int index : indexMap.keySet()) {
-            if(indexMap.get(target - index) != null) {
-                return new int[] {indexMap.get(target - index), indexMap.get(index)};
+            if (indexMap.get(target - index) != null) {
+                return new int[]{indexMap.get(target - index), indexMap.get(index)};
             }
         }
 
